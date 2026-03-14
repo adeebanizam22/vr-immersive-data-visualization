@@ -4,7 +4,7 @@ A simple virtual reality project built using Unity that demonstrates how dataset
 
 ## Project Preview
 
-![VR Visualization](images/vr_visualization.jpg)
+![VR Visualization](images/vr_visualization.png)
 
 *Conceptual preview of the VR data visualization environment.*
 
