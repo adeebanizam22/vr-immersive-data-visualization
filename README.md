@@ -1,80 +1,61 @@
-# vr-immersive-data-visualization
-# Immersive Data Visualization in Virtual Reality
+# VR Immersive Data Visualization
 
-This project demonstrates how datasets can be explored inside a virtual reality environment using Unity.
+A simple virtual reality project built using Unity that demonstrates how datasets can be visualized as **3D bar charts in an immersive environment**.
 
-Instead of traditional dashboards or charts, data is represented as interactive 3D objects inside a virtual space. Users can move around the environment and visually explore the dataset from different perspectives.
+## Project Preview
 
-This approach is commonly used in **immersive analytics**, simulation environments, and digital twin systems.
+![VR Visualization](images/vr_visualization.jpg)
 
+*Conceptual preview of the VR data visualization environment.*
 
+The current implementation generates a **3D bar chart from a dataset using Unity**.
 
 ## Features
 
-- 3D data visualization using bar structures
-- Dataset represented spatially in a VR environment
-- Interactive exploration of data inside a virtual space
-- Compatible with OpenXR VR systems
+* 3D bar chart visualization generated from dataset values
+* Simple immersive VR environment for exploring data visually
+* Implemented using Unity and C#
 
----
+## Project Structure
+
+```
+vr-immersive-data-visualization
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+│
+├── Assets
+│   └── Scripts
+│       └── DataVisualizer.cs
+│
+└── images
+    └── vr_visualization.jpg
+```
 
 ## Technologies Used
 
-- Unity (3D Engine)
-- C#
-- OpenXR
-- GitHub for version control
-
----
+* Unity
+* C#
 
 ## How It Works
 
-The system reads a small dataset and converts each value into a 3D bar.
+The script reads a dataset and generates 3D bars where the **height of each bar represents the value in the dataset**.
 
-Each bar:
-- Height represents the value
-- Position represents the index of the dataset
+Example dataset used in the script:
 
-Users can walk around the environment to inspect the data visually.
+```
+3, 7, 2, 9, 5, 6, 8
+```
 
----
-
-## Example Dataset
-{3, 7, 2, 9, 5, 6, 8}
-
-
-Each number becomes a vertical 3D bar in the virtual environment.
-
----
-
-## Setup Instructions
-
-1. Install Unity (2022 LTS recommended)
-2. Clone this repository
-3. Open the project in Unity
-4. Enable OpenXR in Project Settings
-5. Run the scene
-
-The VR visualization environment will load automatically.
-
----
-
-## Research Context
-
-Immersive visualization environments allow complex datasets to be explored more intuitively compared to traditional charts or dashboards.
-
-Applications include:
-
-- Digital twin systems
-- Simulation environments
-- Scientific visualization
-- Data analytics in virtual reality
-
----
+Each value is converted into a 3D bar inside the Unity scene.
 
 ## Future Improvements
 
-- Real-time data streaming
-- Interactive filtering tools
-- Multi-user collaborative VR environments
-- Integration with live analytics systems
+* Load datasets from external files
+* Support additional chart types
+* Add interactive VR exploration of data
+
+## Author
+
+Adeeba Nizam
